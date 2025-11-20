@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: mi-backend-springboot
+    env: docker
+    plan: free
+    envVars:
+      - key: SERVER_PORT
+        value: 8080
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
